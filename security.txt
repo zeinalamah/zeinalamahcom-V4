@@ -1,0 +1,20 @@
+Contact: mailto:security@zeinalamah.com
+Expires: 2025-03-15T00:00:00.000Z
+Preferred-Languages: en
+Policy: https://zeinalamah.com/security-policy
+Canonical: https://zeinalamah.com/.well-known/security.txt
+Encryption: https://zeinalamah.com/pgp-key.txt
+Acknowledgments: https://zeinalamah.com/security/hall-of-fame
+Hiring: https://zeinalamah.com/careers
+
+# Security Policy
+
+This security.txt file helps security researchers report potential vulnerabilities.
+
+1. We appreciate responsible disclosure of security issues
+2. Please provide detailed reports with reproducible steps
+3. We aim to respond to all reports within 24 hours
+4. Public disclosure only after patches are available
+5. Legal action will not be taken for good faith reports
+
+For urgent security issues, please contact security@zeinalamah.com
