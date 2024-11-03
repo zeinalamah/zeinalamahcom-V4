@@ -1,6 +1,4 @@
-import { HashRouter  as Router, Routes, Route, Link } from 'react-router-dom';
-
-
+import { BrowserRouter, HashRouter, Routes, Route, Link } from 'react-router-dom';
 import { Menu, X, Mail, Github, Linkedin } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -21,6 +19,10 @@ import Sitemap from './pages/Sitemap';
 const App = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [showCookieConsent, setShowCookieConsent] = useState(false);
+
+  // Determine which router to use based on deployment target
+  const isGithub = import.meta.env.VITE_DEPLOY_TARGET === 'github';
+  const Router = isGithub ? HashRouter : BrowserRouter;
 
   useEffect(() => {
     // Reset cookie consent for testing
